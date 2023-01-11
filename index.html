@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Currency Exchange</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black mb-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a></li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./pages/Exchange.html">Exchange</a></li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="./pages/list.html">List</a></li>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <body>
+      <!--Conversor de Monedas-->
+        <section>
+            <div class="box1">
+                <h1 class="h">Currency Converter</h1>
+                <br>
+                Quantity: <input type="range" id="quantity" min="0" max="10000" value="0" onchange="convert()">
+                <span id="val">0</span><br><br>
+                <br>
+                Convert From:
+                <select id="from" onchange="convert()">
+                    <option value="peso">Peso</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select><br><br><br><br>
+                Convert To:
+                <select id="to" onchange="convert()">
+                    <option value="peso">Peso</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select><br><br><br><br>
+                <h2 class=".h" id="result">Result: $0.00</h2>
+                <button class="btn btn-success mt-5" id="storage" onclick="saveOnStorage()">Save on Storage</button>
+                <button class="btn btn-primary mt-5" id="storage" onclick="getOfStorage()">Get of Storage</button>
+            </div>
+        </section>
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+.box1 {
+    width: 350px;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    opacity: 0.95;
+    color: azure;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.box2 {
+    height: 450px;
+    box-sizing: border-box;
+    background: rgb(0, 0, 0);
+    opacity: 0.95;
+    color: azure;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.h {
+    color: azure;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hcart {
+    color: azure;
+    font-size: 1rem;
+}
+
+.htitle {
+    color: azure;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.color{
+    color: azure;
+}
+
+body {
+    background: url(../images/1image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: azure;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: azure;
+}
+
+.input1 {
+    width: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700px;
+}
